@@ -33,7 +33,7 @@ app.post("/api/hippiestuff", (req, res) => {
 
 })
 app.get('*', (req, res) => {
-    res.sendFile(__dirname + '/frontend/build/index.html');
+    res.sendFile('build/index.html');
   });
 
 const port = process.env.PORT || 4000
