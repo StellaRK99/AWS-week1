@@ -5,12 +5,12 @@ app.use(express.json())
 app.use(urlencoded())
 app.use(express.static("build"))
 
-
 const hippieStuff = ["scoby hotel poppin'", "Yerba Mate Tea", "gut-health", "B12 infusion"]
 
 app.get("/api/hippiestuff", (req, res) => {
     try{
         res.send(hippieStuff)
+
     }
     catch(error){
         console.error(error)
