@@ -20,7 +20,7 @@ app.get("/api/hippiestuff", (req, res) => {
 });
 
 app.post("/api/hippiestuff", (req, res) => {
-    const data = req.body
+    const data = req.body.name
     data.id = hippieStuff.length + 1
     try{
     hippieStuff.push(data)
